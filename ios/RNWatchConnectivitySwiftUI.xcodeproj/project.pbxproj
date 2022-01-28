@@ -27,6 +27,7 @@
 		FDA2560E27A38D760011E868 /* WatchAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA2560D27A38D760011E868 /* WatchAppUITests.swift */; };
 		FDA2561027A38D760011E868 /* WatchAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA2560F27A38D760011E868 /* WatchAppUITestsLaunchTests.swift */; };
 		FDA2561327A38D760011E868 /* WatchApp.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = FDA255DD27A38D730011E868 /* WatchApp.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FDA2562327A391580011E868 /* PhoneConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA2562227A391580011E868 /* PhoneConnector.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +128,7 @@
 		FDA2560927A38D760011E868 /* WatchAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WatchAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDA2560D27A38D760011E868 /* WatchAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchAppUITests.swift; sourceTree = "<group>"; };
 		FDA2560F27A38D760011E868 /* WatchAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FDA2562227A391580011E868 /* PhoneConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneConnector.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -271,6 +273,7 @@
 		FDA255E927A38D750011E868 /* WatchApp WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				FDA2562227A391580011E868 /* PhoneConnector.swift */,
 				FDA255EA27A38D750011E868 /* RNWatchConnectivitySwiftUIApp.swift */,
 				FDA255EC27A38D750011E868 /* ContentView.swift */,
 				FDA255EE27A38D750011E868 /* NotificationController.swift */,
@@ -704,6 +707,7 @@
 			files = (
 				FDA255EF27A38D750011E868 /* NotificationController.swift in Sources */,
 				FDA255ED27A38D750011E868 /* ContentView.swift in Sources */,
+				FDA2562327A391580011E868 /* PhoneConnector.swift in Sources */,
 				FDA255F327A38D750011E868 /* ComplicationController.swift in Sources */,
 				FDA255EB27A38D750011E868 /* RNWatchConnectivitySwiftUIApp.swift in Sources */,
 				FDA255F127A38D750011E868 /* NotificationView.swift in Sources */,

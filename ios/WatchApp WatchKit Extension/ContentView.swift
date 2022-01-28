@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    var phoneConnector = PhoneConnector()
+  
     var body: some View {
         Text("Hello, World!")
             .padding()
