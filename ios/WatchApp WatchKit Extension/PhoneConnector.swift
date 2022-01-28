@@ -8,8 +8,10 @@
 import WatchKit
 import WatchConnectivity
 
-final class PhoneConnector: NSObject {
+final class PhoneConnector: NSObject, ObservableObject {
   var session: WCSession
+  
+  @Published var phoneReachabilty = false
   
   init(session: WCSession  = .default) {
     self.session = session

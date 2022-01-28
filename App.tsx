@@ -34,10 +34,9 @@ const App = () => {
   }
 
   // Receive / Reply to Messages
-  const unsubscribe = () => watchEvents.on('message', (message, reply) => {
+  const unsubscribe = () => watchEvents.on('message', (message) => {
     console.log('RN - Received message from Watch', message);
-    // reply({text: "Thanks Watch for the message!"});
-    setMessageFromWatch(message.applianceEmoji + " " + message.applianceName)
+    setMessageFromWatch(String(message.watchMessage))
   })
 
   useEffect(() => {
@@ -51,36 +50,35 @@ const App = () => {
       <ScrollView contentInsetAdjustmentBehavior="automatic" style={{paddingHorizontal: 16}}>
         <Header />
   
-        <View style={{marginTop: 8, marginBottom: 16}}>
-          {/* 
+        {/* 
           *
           * Interactive Messaging - http://mtford.co.uk/react-native-watch-connectivity/docs/communication/#interactive-messaging
           * 
           * */}
+        <View style={{marginTop: 8, marginBottom: 16}}>
           <SectionHeader title='- Interactive Messaging -' />
-          <SectionNote text='// Used when information is required immediately and both apps are running in the foreground.' />
-          <SectionSubHeader title='Send message to Apple Watch' />
-          <TextInput style={styles.textInput} onChangeText={setMessage} placeholder="Message here" value={message} clearButtonMode='always' />
-          <Button title='SEND!' onPress={() => sendMessageToWatch()} />
-
           {/* Receive & reply to messages from the watch. */}
+          <SectionNote text='// Used when information is required immediately and both apps are running in the foreground.' />
           <SectionSubHeader title='Received message from Apple Watch' />
           <SectionNote text='// Messages received from the watchOS app will be shown below.' />
-
           <View style={{backgroundColor: "#2C2C2E", borderRadius: 16, justifyContent: 'center', paddingVertical: 8, marginVertical: 8}}>
             <Text style={{fontWeight: 'bold', fontSize: 16, color: Colors.tundora, marginHorizontal: 12, marginVertical: 8}}>{messageFromWatch}</Text>
           </View>
+
+          <SectionSubHeader title='Send message to Apple Watch' />
+          <TextInput style={styles.textInput} onChangeText={setMessage} placeholder="Message here" value={message} clearButtonMode='always' />
+          <Button title='SEND!' onPress={() => sendMessageToWatch()} />
         </View>
 
-        <View style={{marginVertical: 16}}>
-          <SectionHeader title='- Background transfer -' />
-          <SectionSubHeader title='Transfer user info to the watch' />
-
-          {/* 
+        {/* 
           *
           * Background Transfers - http://mtford.co.uk/react-native-watch-connectivity/docs/communication/#background-transfers
           * 
-          * */}
+          */}
+        <View style={{marginVertical: 16}}>
+          <SectionHeader title='- Background transfer -' />
+          <SectionSubHeader title='Transfer user info to the watch' />
+          
           <SectionNote text="// watchEvents.on('user-info') - Background Transfers. The OS is responsible for determining when the content is delivered. You do not need both apps to be reachable in order to use these methods.." />
           <TextInput style={styles.textInput} onChangeText={setSendUserInfo} placeholder="Message here" value={sendUserInfo} clearButtonMode='always' />
           <Button title='SEND!' onPress={() => transferUserInfo({key: text})} />
@@ -99,7 +97,7 @@ const styles = StyleSheet.create({
     height: 50,
     padding: 10,
     marginTop: 8,
-    marginBottom: 16,
+    marginBottom: 8,
     borderRadius: 16,
     fontSize: 16,
     fontWeight: 'bold', 

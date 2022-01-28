@@ -8,11 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
-    var phoneConnector = PhoneConnector()
+    @ObservedObject var phoneConnector = PhoneConnector()
   
     var body: some View {
-        Text("Hello, World!")
-            .padding()
+        VStack(alignment: .leading, spacing: 5) {
+            Text("Send to Watch")
+            Button {
+                self.sendMessage()
+            } label: {
+                Text("Send")
+            }
+        }
+    }
+  
+    private func sendMessage() {
+        let randomNumber = String(Int.random(in: 0..<100))
+        let message: [String: Any] = ["watchMessage": randomNumber]
+        self.phoneConnector.session.sendMessage(message, replyHandler: nil) { (error) in
+            print(error.localizedDescription)
+        }
     }
 }
 
