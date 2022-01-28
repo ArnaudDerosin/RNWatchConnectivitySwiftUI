@@ -11,14 +11,21 @@ struct ContentView: View {
     @ObservedObject var phoneConnector = PhoneConnector()
   
     var body: some View {
-        VStack(alignment: .leading, spacing: 5) {
-            Text("Send to Watch")
-            Button {
-                self.sendMessage()
-            } label: {
-                Text("Send")
-            }
-        }
+      VStack(alignment: .leading, spacing: 20) {
+          VStack(alignment: .leading, spacing: 5) {
+              Text("Send to Watch")
+              Button {
+                  self.sendMessage()
+              } label: {
+                  Text("Send")
+              }
+          }
+        
+          VStack(alignment: .leading, spacing: 5) {
+              Text("Message from App")
+              Text(self.phoneConnector.receivedMessage)
+          }
+      }
     }
   
     private func sendMessage() {

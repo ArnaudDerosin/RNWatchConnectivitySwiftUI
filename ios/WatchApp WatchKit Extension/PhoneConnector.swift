@@ -9,22 +9,30 @@ import WatchKit
 import WatchConnectivity
 
 final class PhoneConnector: NSObject, ObservableObject {
-  var session: WCSession
+		var session: WCSession
   
-  @Published var phoneReachabilty = false
-  
-  init(session: WCSession  = .default) {
-    self.session = session
-    super.init()
-    if WCSession.isSupported() {
-      session.delegate = self
-      session.activate()
+		@Published var receivedMessage = "Waiting..."
+
+    init(session: WCSession  = .default) {
+        self.session = session
+        super.init()
+        if WCSession.isSupported() {
+            session.delegate = self
+            session.activate()
+        }
     }
-  }
 }
 
 extension PhoneConnector: WCSessionDelegate {
-  func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
-    
-  }
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+      
+    }
+  
+    func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: @escaping ([String : Any]) -> Void) {
+        guard let receivedMessages = message["text"] as? String else { return }
+        
+        DispatchQueue.main.async {
+            self.receivedMessage = receivedMessages
+        }
+    }
 }
