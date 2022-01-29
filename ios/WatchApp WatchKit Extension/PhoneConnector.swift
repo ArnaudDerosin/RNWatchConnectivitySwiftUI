@@ -12,6 +12,8 @@ final class PhoneConnector: NSObject, ObservableObject {
 		var session: WCSession
   
 		@Published var receivedMessage = "Waiting..."
+    @Published var userInfo = "Waiting..."
+    @Published var applicationContextMessage = "Waiting..."
 
     init(session: WCSession  = .default) {
         self.session = session
@@ -29,10 +31,26 @@ extension PhoneConnector: WCSessionDelegate {
     }
   
     func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: @escaping ([String : Any]) -> Void) {
-        guard let receivedMessages = message["text"] as? String else { return }
+        guard let receivedMessage = message["text"] as? String else { return }
         
         DispatchQueue.main.async {
-            self.receivedMessage = receivedMessages
+            self.receivedMessage = receivedMessage
+        }
+    }
+  
+    func session(_ session: WCSession, didReceiveUserInfo userInfo: [String : Any] = [:]) {
+        guard let userInfo = userInfo["randomNumber"] as? Int else { return }
+      
+        DispatchQueue.main.async {
+            self.userInfo = String(userInfo)
+        }
+    }
+  
+    func session(_ session: WCSession, didReceiveApplicationContext applicationContext: [String : Any]) {
+        guard let receivedApplicationContext = applicationContext["randomNumber"] as? Int else { return }
+        
+        DispatchQueue.main.async {
+            self.applicationContextMessage = String(receivedApplicationContext)
         }
     }
 }
