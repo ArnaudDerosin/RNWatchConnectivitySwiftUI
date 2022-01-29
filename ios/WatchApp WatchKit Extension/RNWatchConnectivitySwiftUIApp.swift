@@ -12,7 +12,7 @@ struct RNWatchConnectivitySwiftUIApp: App {
     @SceneBuilder var body: some Scene {
         WindowGroup {
             NavigationView {
-                ContentView()
+                HomeView()
             }
         }
 

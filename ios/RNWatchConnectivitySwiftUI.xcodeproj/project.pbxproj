@@ -28,6 +28,7 @@
 		FDA2561027A38D760011E868 /* WatchAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA2560F27A38D760011E868 /* WatchAppUITestsLaunchTests.swift */; };
 		FDA2561327A38D760011E868 /* WatchApp.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = FDA255DD27A38D730011E868 /* WatchApp.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		FDA2562327A391580011E868 /* PhoneConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA2562227A391580011E868 /* PhoneConnector.swift */; };
+		FDA3019F27A53357004B4F07 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA3019E27A53357004B4F07 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +130,7 @@
 		FDA2560D27A38D760011E868 /* WatchAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchAppUITests.swift; sourceTree = "<group>"; };
 		FDA2560F27A38D760011E868 /* WatchAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FDA2562227A391580011E868 /* PhoneConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneConnector.swift; sourceTree = "<group>"; };
+		FDA3019E27A53357004B4F07 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -273,9 +275,9 @@
 		FDA255E927A38D750011E868 /* WatchApp WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				FDA301A027A53361004B4F07 /* Views */,
 				FDA2562227A391580011E868 /* PhoneConnector.swift */,
 				FDA255EA27A38D750011E868 /* RNWatchConnectivitySwiftUIApp.swift */,
-				FDA255EC27A38D750011E868 /* ContentView.swift */,
 				FDA255EE27A38D750011E868 /* NotificationController.swift */,
 				FDA255F027A38D750011E868 /* NotificationView.swift */,
 				FDA255F227A38D750011E868 /* ComplicationController.swift */,
@@ -310,6 +312,15 @@
 				FDA2560F27A38D760011E868 /* WatchAppUITestsLaunchTests.swift */,
 			);
 			path = WatchAppUITests;
+			sourceTree = "<group>";
+		};
+		FDA301A027A53361004B4F07 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FDA3019E27A53357004B4F07 /* HomeView.swift */,
+				FDA255EC27A38D750011E868 /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -706,6 +717,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDA255EF27A38D750011E868 /* NotificationController.swift in Sources */,
+				FDA3019F27A53357004B4F07 /* HomeView.swift in Sources */,
 				FDA255ED27A38D750011E868 /* ContentView.swift in Sources */,
 				FDA2562327A391580011E868 /* PhoneConnector.swift in Sources */,
 				FDA255F327A38D750011E868 /* ComplicationController.swift in Sources */,

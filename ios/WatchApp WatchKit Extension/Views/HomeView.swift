@@ -9,7 +9,43 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .center, spacing: 0) {
+            Button(action: {
+                print("Interactive Messaging tapped!")
+            }) {
+                HStack {
+                    Image(systemName: "bolt.horizontal.fill")
+                      .font(.title3)
+                    VStack {
+                      Text("Interactive ")
+                        .fontWeight(.semibold)
+                        .font(.caption)
+                      Text("Messaging")
+                        .fontWeight(.semibold)
+                        .font(.caption)
+                    }
+                 
+                }
+                .padding()
+                .foregroundColor(.white)
+            }
+          
+            Spacer()
+          
+            Button(action: {
+              print("Background transfer tapped!")
+            }) {
+                HStack {
+                    Image(systemName: "bolt.horizontal")
+                      .font(.title3)
+                    Text("Background transfer")
+                      .fontWeight(.semibold)
+                      .font(.caption)
+                }
+                .padding()
+                .foregroundColor(.white)
+            }
+        }
     }
 }
 
