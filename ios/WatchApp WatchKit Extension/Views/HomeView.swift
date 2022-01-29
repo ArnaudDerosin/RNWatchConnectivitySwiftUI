@@ -15,12 +15,12 @@ struct HomeView: View {
                     Image(systemName: "bolt.horizontal.fill")
                       .font(.title3)
                     VStack {
-                      Text("Interactive ")
-                        .fontWeight(.semibold)
-                        .font(.caption)
-                      Text("Messaging")
-                        .fontWeight(.semibold)
-                        .font(.caption)
+                        Text("Interactive ")
+                          .fontWeight(.semibold)
+                          .font(.caption)
+                        Text("Messaging")
+                          .fontWeight(.semibold)
+                          .font(.caption)
                     }
                 }
                 .padding()
