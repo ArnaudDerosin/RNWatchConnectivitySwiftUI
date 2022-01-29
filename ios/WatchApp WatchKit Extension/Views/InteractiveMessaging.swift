@@ -14,8 +14,8 @@ struct InteractiveMessaging: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
                 VStack(alignment: .leading, spacing: 5) {
-                  Text("↑ Send to App")
-                    .fontWeight(.bold)
+                    Text("↑ Send to App")
+                      .fontWeight(.bold)
                     Button {
                         self.sendMessage()
                     } label: {
@@ -24,8 +24,8 @@ struct InteractiveMessaging: View {
                 }
               
                 VStack(alignment: .leading, spacing: 5) {
-                  Text("↓ Receive from App")
-                    .fontWeight(.bold)
+                    Text("↓ Receive from App")
+                      .fontWeight(.bold)
                     Text(self.phoneConnector.receivedMessage)
                 }
             }
