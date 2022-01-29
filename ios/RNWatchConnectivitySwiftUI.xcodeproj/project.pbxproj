@@ -17,7 +17,6 @@
 		FDA255E027A38D740011E868 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDA255DF27A38D740011E868 /* Assets.xcassets */; };
 		FDA255E627A38D750011E868 /* WatchApp WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FDA255E527A38D750011E868 /* WatchApp WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		FDA255EB27A38D750011E868 /* RNWatchConnectivitySwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA255EA27A38D750011E868 /* RNWatchConnectivitySwiftUIApp.swift */; };
-		FDA255ED27A38D750011E868 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA255EC27A38D750011E868 /* ContentView.swift */; };
 		FDA255EF27A38D750011E868 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA255EE27A38D750011E868 /* NotificationController.swift */; };
 		FDA255F127A38D750011E868 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA255F027A38D750011E868 /* NotificationView.swift */; };
 		FDA255F327A38D750011E868 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA255F227A38D750011E868 /* ComplicationController.swift */; };
@@ -118,7 +117,6 @@
 		FDA255DF27A38D740011E868 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDA255E527A38D750011E868 /* WatchApp WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchApp WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDA255EA27A38D750011E868 /* RNWatchConnectivitySwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RNWatchConnectivitySwiftUIApp.swift; sourceTree = "<group>"; };
-		FDA255EC27A38D750011E868 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FDA255EE27A38D750011E868 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		FDA255F027A38D750011E868 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		FDA255F227A38D750011E868 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
@@ -322,7 +320,6 @@
 			isa = PBXGroup;
 			children = (
 				FDA3019E27A53357004B4F07 /* HomeView.swift */,
-				FDA255EC27A38D750011E868 /* ContentView.swift */,
 				FDA301A327A54700004B4F07 /* InteractiveMessaging.swift */,
 				FDA301A127A54476004B4F07 /* BackgroundTransferView.swift */,
 			);
@@ -724,7 +721,6 @@
 			files = (
 				FDA255EF27A38D750011E868 /* NotificationController.swift in Sources */,
 				FDA3019F27A53357004B4F07 /* HomeView.swift in Sources */,
-				FDA255ED27A38D750011E868 /* ContentView.swift in Sources */,
 				FDA2562327A391580011E868 /* PhoneConnector.swift in Sources */,
 				FDA255F327A38D750011E868 /* ComplicationController.swift in Sources */,
 				FDA255EB27A38D750011E868 /* RNWatchConnectivitySwiftUIApp.swift in Sources */,
