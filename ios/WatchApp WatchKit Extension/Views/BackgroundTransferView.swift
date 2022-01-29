@@ -8,8 +8,24 @@
 import SwiftUI
 
 struct BackgroundTransferView: View {
+    @ObservedObject var phoneConnector = PhoneConnector()
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView {
+            VStack(alignment: .leading, spacing: 20) {
+                VStack(alignment: .leading, spacing: 5) {
+                  Text("↓ User info")
+                    .fontWeight(.bold)
+                    Text(String(self.phoneConnector.userInfo))
+                }
+                
+                VStack(alignment: .leading, spacing: 5) {
+                  Text("↓ Application context")
+                    .fontWeight(.bold)
+                    Text(self.phoneConnector.applicationContextMessage)
+                }
+            }
+        }
     }
 }
 
