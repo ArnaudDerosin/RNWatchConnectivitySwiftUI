@@ -10,9 +10,7 @@ import SwiftUI
 struct HomeView: View {
     var body: some View {
         VStack(alignment: .center, spacing: 0) {
-            Button(action: {
-                print("Interactive Messaging tapped!")
-            }) {
+            NavigationLink(destination: InteractiveMessaging()) {
                 HStack {
                     Image(systemName: "bolt.horizontal.fill")
                       .font(.title3)
@@ -24,7 +22,6 @@ struct HomeView: View {
                         .fontWeight(.semibold)
                         .font(.caption)
                     }
-                 
                 }
                 .padding()
                 .foregroundColor(.white)
@@ -32,9 +29,7 @@ struct HomeView: View {
           
             Spacer()
           
-            Button(action: {
-              print("Background transfer tapped!")
-            }) {
+            NavigationLink(destination: BackgroundTransferView()) {
                 HStack {
                     Image(systemName: "bolt.horizontal")
                       .font(.title3)
