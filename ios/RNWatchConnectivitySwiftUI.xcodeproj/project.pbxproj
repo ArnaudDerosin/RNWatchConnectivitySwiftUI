@@ -29,6 +29,8 @@
 		FDA2561327A38D760011E868 /* WatchApp.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = FDA255DD27A38D730011E868 /* WatchApp.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		FDA2562327A391580011E868 /* PhoneConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA2562227A391580011E868 /* PhoneConnector.swift */; };
 		FDA3019F27A53357004B4F07 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA3019E27A53357004B4F07 /* HomeView.swift */; };
+		FDA301A227A54476004B4F07 /* BackgroundTransferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA301A127A54476004B4F07 /* BackgroundTransferView.swift */; };
+		FDA301A427A54700004B4F07 /* InteractiveMessaging.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA301A327A54700004B4F07 /* InteractiveMessaging.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,6 +133,8 @@
 		FDA2560F27A38D760011E868 /* WatchAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FDA2562227A391580011E868 /* PhoneConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneConnector.swift; sourceTree = "<group>"; };
 		FDA3019E27A53357004B4F07 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		FDA301A127A54476004B4F07 /* BackgroundTransferView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundTransferView.swift; sourceTree = "<group>"; };
+		FDA301A327A54700004B4F07 /* InteractiveMessaging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveMessaging.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -319,6 +323,8 @@
 			children = (
 				FDA3019E27A53357004B4F07 /* HomeView.swift */,
 				FDA255EC27A38D750011E868 /* ContentView.swift */,
+				FDA301A327A54700004B4F07 /* InteractiveMessaging.swift */,
+				FDA301A127A54476004B4F07 /* BackgroundTransferView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -722,7 +728,9 @@
 				FDA2562327A391580011E868 /* PhoneConnector.swift in Sources */,
 				FDA255F327A38D750011E868 /* ComplicationController.swift in Sources */,
 				FDA255EB27A38D750011E868 /* RNWatchConnectivitySwiftUIApp.swift in Sources */,
+				FDA301A427A54700004B4F07 /* InteractiveMessaging.swift in Sources */,
 				FDA255F127A38D750011E868 /* NotificationView.swift in Sources */,
+				FDA301A227A54476004B4F07 /* BackgroundTransferView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
