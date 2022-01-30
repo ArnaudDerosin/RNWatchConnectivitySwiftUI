@@ -19,3 +19,17 @@ This application will allow you to try communication between devices including i
 * Context (used when only the latest information is required. Once the Watch App or Companion App is launched the data will be received)
   * Update from App
   * Update from Watch
+
+# Install
+```
+git clone https://github.com/ArnaudDerosin/RNWatchConnectivitySwiftUI.git
+yarn install
+cd ios
+pod install
+cd ..
+# Run you app 
+yarn react-native run-ios
+```
+
+# Links
+* react-native-watch-connectivity
