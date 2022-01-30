@@ -1,7 +1,15 @@
 # RNWatchConnectivitySwiftUI
-Sample project that allow you to test communication between a React Native iOS app and its paired watchOS app using the SwiftUI framework.
+This application will allow you to try communication between a React Native iOS app and its paired watchOS app using the SwiftUI framework. It includes interactive messaging, background transfer and monitoring including reachability, watch app installation.
 
-This application will allow you to try communication between devices including interactive messaging, background transfer and monitoring including reachability, watch app installation.
+## React Native App preview
+<p align="center">
+  <img width="300" src="https://user-images.githubusercontent.com/3236032/151686961-6acf623c-6f27-4e7a-87ba-494c9f72edda.gif">
+</p>
+ 
+ ## Watch App preview
+<p align="center">
+  <img width="200" src="https://user-images.githubusercontent.com/3236032/151687045-d48b5eb3-498f-4508-8889-e12075512f84.PNG">
+</p>
 
 # Features 
 ### Monitoring
