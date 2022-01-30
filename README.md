@@ -27,9 +27,9 @@ yarn install
 cd ios
 pod install
 cd ..
-# Run you app 
+# run you app 
 yarn react-native run-ios
 ```
 
 # Links
-* react-native-watch-connectivity
+* <a href="http://mtford.co.uk/react-native-watch-connectivity/">react-native-watch-connectivity</a>
