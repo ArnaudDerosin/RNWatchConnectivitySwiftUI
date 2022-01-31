@@ -1,5 +1,5 @@
-# RNWatchConnectivitySwiftUI
-This application will allow you to try communication between a React Native iOS app and its paired watchOS app using the SwiftUI framework. It includes interactive messaging, background transfer and monitoring including reachability, watch app installation.
+# RNWatchConnectivitySwiftUI - WIP (Background transfer from Watch)
+The application allow you to try communication between a React Native iOS app and its paired watchOS app using the SwiftUI framework. It includes interactive messaging, background transfer and monitoring including reachability, watch app installation.
 
 ## React Native App preview
 <p align="center">
